@@ -11,12 +11,12 @@ cask "hako" do
 
   app "Hako.app"
 
+  zap trash: "~/Library/Preferences/com.nemooon.hako.plist"
+
   caveats <<~EOS
     Hako is not signed with an Apple Developer ID.
     If macOS blocks the app on first launch, right-click Hako.app and
     choose "Open", or install with:
       brew install --cask --no-quarantine nemooon/tap/hako
   EOS
-
-  zap trash: "~/Library/Preferences/com.nemooon.hako.plist"
 end

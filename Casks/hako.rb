@@ -15,8 +15,8 @@ cask "hako" do
 
   caveats <<~EOS
     Hako is not signed with an Apple Developer ID.
-    If macOS blocks the app on first launch, right-click Hako.app and
-    choose "Open", or install with:
-      brew install --cask --no-quarantine nemooon/tap/hako
+    If macOS blocks the app on first launch, right-click Hako.app in
+    /Applications and choose "Open", or remove the quarantine flag:
+      xattr -dr com.apple.quarantine /Applications/Hako.app
   EOS
 end

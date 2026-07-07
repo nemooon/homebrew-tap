@@ -9,10 +9,10 @@ brew install --cask nemooon/tap/hako
 ```
 
 未署名アプリのため、初回起動時に Gatekeeper の警告が出る場合は
-右クリック →「開く」で起動するか、`--no-quarantine` 付きでインストールしてください:
+右クリック →「開く」で起動するか、quarantine 属性を外してください:
 
 ```sh
-brew install --cask --no-quarantine nemooon/tap/hako
+xattr -dr com.apple.quarantine /Applications/Hako.app
 ```
 
 ## Casks

@@ -1,0 +1,22 @@
+# homebrew-tap
+
+nemooon の Homebrew tap。
+
+## 使い方
+
+```sh
+brew install --cask nemooon/tap/hako
+```
+
+未署名アプリのため、初回起動時に Gatekeeper の警告が出る場合は
+右クリック →「開く」で起動するか、`--no-quarantine` 付きでインストールしてください:
+
+```sh
+brew install --cask --no-quarantine nemooon/tap/hako
+```
+
+## Casks
+
+| Cask | 説明 |
+|------|------|
+| [hako](Casks/hako.rb) | [Colima](https://github.com/abiosoft/colima) とコンテナの状態を表示・操作するメニューバーアプリ |

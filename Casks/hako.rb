@@ -7,7 +7,7 @@ cask "hako" do
   desc "Menu bar app for monitoring and controlling Colima and its containers"
   homepage "https://github.com/nemooon/hako"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Hako.app"
 
@@ -18,7 +18,5 @@ cask "hako" do
       brew install --cask --no-quarantine nemooon/tap/hako
   EOS
 
-  zap trash: [
-    "~/Library/Preferences/com.nemooon.hako.plist",
-  ]
+  zap trash: "~/Library/Preferences/com.nemooon.hako.plist"
 end

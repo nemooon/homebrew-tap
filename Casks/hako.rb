@@ -1,6 +1,6 @@
 cask "hako" do
-  version "0.2"
-  sha256 "df88616684bcf4145d493926dfa91272f96259f3ed7f67b1946605707dca5622"
+  version "0.3"
+  sha256 "35507c0f3e26f531cc93a136ef58f828a53474511b57a702238ea029c5828223"
 
   url "https://github.com/nemooon/hako/releases/download/v#{version}/Hako-#{version}.zip"
   name "Hako"

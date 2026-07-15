@@ -14,9 +14,15 @@ cask "neruna" do
   zap trash: "~/Library/Preferences/com.nemooon.neruna.plist"
 
   caveats <<~EOS
-    Neruna is not signed with an Apple Developer ID.
-    If macOS blocks the app on first launch, right-click Neruna.app in
-    /Applications and choose "Open", or remove the quarantine flag:
+    Neruna is not signed with an Apple Developer ID, so macOS quarantines it
+    and refuses to open it. Remove the quarantine flag before first launch:
+
       xattr -dr com.apple.quarantine /Applications/Neruna.app
+
+    Alternatively, try to open the app, then go to System Settings >
+    Privacy & Security and click "Open Anyway" under Security.
+
+    (Control-clicking the app and choosing "Open" no longer works: macOS
+    Sequoia removed that bypass.)
   EOS
 end

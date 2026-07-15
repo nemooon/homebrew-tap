@@ -9,12 +9,19 @@ brew install --cask nemooon/tap/hako
 brew install --cask nemooon/tap/neruna
 ```
 
-いずれも未署名アプリのため、初回起動時に Gatekeeper の警告が出る場合は
-右クリック →「開く」で起動するか、quarantine 属性を外してください:
+いずれも Apple Developer ID 署名なしのため、macOS が quarantine を付けて
+起動をブロックします。初回起動前に属性を外してください:
 
 ```sh
 xattr -dr com.apple.quarantine /Applications/<アプリ名>.app
 ```
+
+または、一度起動を試したあと「システム設定 → プライバシーとセキュリティ」の
+セキュリティ欄で「このまま開く」を選びます。
+
+> macOS 15 (Sequoia) 以降、右クリック →「開く」による回避は
+> [Apple が削除](https://www.idownloadblog.com/2024/08/07/apple-macos-sequoia-gatekeeper-change-install-unsigned-apps-mac/)しました。
+> `brew install --cask --no-quarantine` も Homebrew 6.x で廃止されています。
 
 ## Casks
 

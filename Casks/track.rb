@@ -1,6 +1,6 @@
 cask "track" do
-  version "0.2.0"
-  sha256 "461e1f3e507725f5d2df3a508ad53da0af90ec7af8f8095e5b7b925dbbe56964"
+  version "0.2.1"
+  sha256 "ceac0fdd4f1fdb2aeeb0c0eddb4e1a0fd307c27fb159101bb02e56571093c259"
 
   url "https://github.com/nemooon/track/releases/download/v#{version}/Track-#{version}.zip"
   name "Track"
@@ -12,7 +12,7 @@ cask "track" do
 
   app "Track.app"
 
-  uninstall quit: "dev.nemoto.track"
+  uninstall quit: "com.nemooon.track"
 
   caveats <<~EOS
     Track is not signed with an Apple Developer ID, so macOS may quarantine it

@@ -1,6 +1,6 @@
 cask "track" do
-  version "0.2.1"
-  sha256 "ceac0fdd4f1fdb2aeeb0c0eddb4e1a0fd307c27fb159101bb02e56571093c259"
+  version "0.3.0"
+  sha256 "616c44d68b0d91aeffdbb2473314e6ffb50288acd490103314d2edc11f0a14c0"
 
   url "https://github.com/nemooon/track/releases/download/v#{version}/Track-#{version}.zip"
   name "Track"
@@ -11,7 +11,6 @@ cask "track" do
   depends_on arch: :arm64
 
   app "Track.app"
-
   uninstall quit: "com.nemooon.track"
 
   caveats <<~EOS

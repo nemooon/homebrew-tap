@@ -7,6 +7,7 @@ nemooon の Homebrew tap。
 ```sh
 brew install --cask nemooon/tap/hako
 brew install --cask nemooon/tap/neruna
+brew install --cask nemooon/tap/track
 ```
 
 いずれも Apple Developer ID 署名なしのため、macOS が quarantine を付けて
@@ -21,7 +22,6 @@ xattr -dr com.apple.quarantine /Applications/<アプリ名>.app
 
 > macOS 15 (Sequoia) 以降、右クリック →「開く」による回避は
 > [Apple が削除](https://www.idownloadblog.com/2024/08/07/apple-macos-sequoia-gatekeeper-change-install-unsigned-apps-mac/)しました。
-> `brew install --cask --no-quarantine` も Homebrew 6.x で廃止されています。
 
 ## Casks
 
@@ -29,3 +29,4 @@ xattr -dr com.apple.quarantine /Applications/<アプリ名>.app
 |------|------|
 | [hako](Casks/hako.rb) | [Colima](https://github.com/abiosoft/colima) とコンテナの状態を表示・操作するメニューバーアプリ |
 | [neruna](Casks/neruna.rb) | `caffeinate` でMacのスリープを防止するメニューバーアプリ |
+| [track](Casks/track.rb) | ローカルファーストの工数管理アプリ |

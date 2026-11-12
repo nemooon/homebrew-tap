@@ -1,6 +1,6 @@
 cask "track" do
-  version "0.7.3"
-  sha256 "06a7eb5d203bda7527c7ada9ed0acfb336e1019a0a74f0548898feaddbcb1649"
+  version "0.7.4"
+  sha256 "44b73efe353f6472aff4e73d27de26088ef504bdf1df3ef14ae2d916a8c1308b"
 
   url "https://github.com/nemooon/track/releases/download/v#{version}/Track-#{version}.zip"
   name "Track"
